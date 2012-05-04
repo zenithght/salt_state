@@ -1,7 +1,6 @@
 {% for username, args in pillar['users'].iteritems() %}
 {{ username }}:
-  user:
-    - present
+  user.present:
     - shell: {{ args['shell'] }}
     - uid: {{ args['uid'] }}
     - gid: {{ args['gid'] }}
@@ -13,8 +12,7 @@
 
 {% if 'ssh_auth' in args %}
 {{ args['ssh_auth']['key'] }}:
-  ssh_auth:
-    - present
+  ssh_auth.present:
     - user: {{ username }}
     - comment: {{ args['ssh_auth']['comment'] }}
 {% endif %}
