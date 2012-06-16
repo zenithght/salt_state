@@ -5,9 +5,7 @@
     - shell: {{ pillar.unprivileged_shell or "/bin/bash" }}
     - uid: {{ args['uid'] }}
     - gid: {{ args['gid'] }}
-{% if 'password' in args %}
-    - password: {{ args['password'] }}
-{% else %}
+{% if not pillar.unprivileged_keep_password %}
     - password: '!'
 {% endif %}
 {% if pillar.unprivileged_groups %}
