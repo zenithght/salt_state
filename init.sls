@@ -10,6 +10,9 @@
 {% else %}
     - password: '!'
 {% endif %}
+{% if pillar.unprivileged_groups %}
+    - groups: {{ pillar.unprivileged_groups }}
+{% endif %}
 
 {% if 'ssh_auth' in args %}
 /home/{{ user }}/.ssh:
