@@ -2,13 +2,13 @@
 {{ user }}:
   user.present:
     - home: /home/{{ user }}
-    - shell: {{ pillar.unprivileged_shell or "/bin/bash" }}
+    - shell: {{ pillar.get('unprivileged_shell', '/bin/bash') }}
     - uid: {{ args['uid'] }}
     - gid: {{ args['gid'] }}
-{% if not pillar.unprivileged_keep_password %}
+{% if not 'unprivileged_keep_password' in pillar %}
     - password: '!'
 {% endif %}
-{% if pillar.unprivileged_groups %}
+{% if 'unprivileged_groups' in pillar %}
     - groups: {{ pillar.unprivileged_groups }}
 {% endif %}
 
