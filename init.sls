@@ -5,6 +5,7 @@
     - shell: {{ pillar.get('unprivileged_shell', '/bin/bash') }}
     - uid: {{ args['uid'] }}
     - gid: {{ args['gid'] }}
+    - fullname: {{ args['fullname'] }}
 {% if not 'unprivileged_keep_password' in pillar %}
     - password: '!'
 {% endif %}
