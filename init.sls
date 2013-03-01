@@ -28,7 +28,7 @@
     - require:
       - file: /home/{{ user }}/.ssh
 
-{{ args['ssh_auth']['key'] }}:
+present_key:
   ssh_auth.present:
     - user: {{ user }}
     - require:
