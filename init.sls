@@ -2,15 +2,15 @@
 {{ user }}:
   user.present:
     - home: /home/{{ user }}
-    - shell: {{ pillar.get('unprivileged_shell', '/bin/bash') }}
+    - shell: '/bin/bash'
     - uid: {{ args['uid'] }}
     - gid: {{ args['gid'] }}
     - fullname: {{ args['fullname'] }}
-{% if not 'unprivileged_keep_password' in pillar %}
+{% if args['disable_password'] == 'True' %}
     - password: '!'
 {% endif %}
-{% if 'unprivileged_groups' in pillar %}
-    - groups: {{ pillar.unprivileged_groups }}
+{% if 'sysadmin' in pillar %}
+    - groups: 'sysadmin'
 {% endif %}
 
 {% if 'ssh_auth' in args %}
