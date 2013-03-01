@@ -1,5 +1,9 @@
 {% for user, args in pillar['users'].iteritems() %}
 {{ user }}:
+  group.present:
+    - name: {{ user}}
+    - gid: {{ args['gid'] }}
+
   user.present:
     - home: /home/{{ user }}
     - shell: '/bin/bash'
@@ -14,6 +18,7 @@
 {% for group in args['groups'] %}
       - group: {{ group }}
 {% endfor %}
+      - group: {{ user }}
 
 
 {% if 'ssh_auth' in args %}
