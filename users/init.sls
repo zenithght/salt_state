@@ -15,7 +15,7 @@
 /home/{{ user }}/.ssh:
   file.directory:
     - user: {{ user }}
-    - group: {{ user }} 
+    - group: {{ user }}
     - mode: 700
     - require:
       - user: {{ user }}
@@ -23,7 +23,7 @@
 /home/{{ user }}/.ssh/authorized_keys:
   file.managed:
     - user: {{ user }}
-    - group: {{ user }} 
+    - group: {{ user }}
     - mode: 600
     - require:
       - file: /home/{{ user }}/.ssh
