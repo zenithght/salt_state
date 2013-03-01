@@ -1,3 +1,4 @@
 base:
   'staging*':
     - nginx
+    - users
