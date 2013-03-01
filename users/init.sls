@@ -10,6 +10,11 @@
     - password: '!'
 {% endif %}
     - groups: {{ args['groups'] }}
+    - require:
+{% for group in args['groups'] %}
+      - group: {{ group }}
+{% endfor %}
+
 
 {% if 'ssh_auth' in args %}
 /home/{{ user }}/.ssh:
