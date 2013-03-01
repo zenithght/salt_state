@@ -1,5 +1,3 @@
 base:
-  '*':
-    - sysconfig
-  'front*':
+  'staging*':
     - nginx
