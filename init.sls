@@ -9,15 +9,13 @@
 {% if args['disable_password'] == 'True' %}
     - password: '!'
 {% endif %}
-{% if 'sysadmin' in pillar %}
-    - groups: 'sysadmin'
-{% endif %}
+    - groups: {{ args['groups'] }}
 
 {% if 'ssh_auth' in args %}
 /home/{{ user }}/.ssh:
   file.directory:
     - user: {{ user }}
-    - group: {{ args['group'] }}
+    - group: {{ user }} 
     - mode: 700
     - require:
       - user: {{ user }}
@@ -25,7 +23,7 @@
 /home/{{ user }}/.ssh/authorized_keys:
   file.managed:
     - user: {{ user }}
-    - group: {{ args['group'] }}
+    - group: {{ user }} 
     - mode: 600
     - require:
       - file: /home/{{ user }}/.ssh
@@ -33,8 +31,8 @@
 {{ args['ssh_auth']['key'] }}:
   ssh_auth.present:
     - user: {{ user }}
-    - comment: {{ args['ssh_auth']['comment'] }}
     - require:
       - file: /home/{{ user }}/.ssh/authorized_keys
+    - source: salt://ssh_keys/{{ user }}.id_rsa.pub
 {% endif %}
 {% endfor %}
