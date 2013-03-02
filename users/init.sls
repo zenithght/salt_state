@@ -38,7 +38,6 @@
     - require:
       - file: /home/{{ user }}/.ssh
 
-present_key:
   ssh_auth.present:
     - user: {{ user }}
     - require:
