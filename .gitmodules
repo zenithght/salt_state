@@ -1,3 +1,6 @@
+[submodule "vim"]
+	path = vim
+	url = git://github.com/SmartReceipt/salt_vim.git
 [submodule "nginx"]
 	path = nginx
 	url = git://github.com/SmartReceipt/salt_nginx.git
