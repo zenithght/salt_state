@@ -4,3 +4,6 @@
 [submodule "nginx"]
 	path = nginx
 	url = git://github.com/SmartReceipt/salt_nginx.git
+[submodule "users"]
+	path = users
+	url = git://github.com/SmartReceipt/salt_users.git
