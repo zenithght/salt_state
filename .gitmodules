@@ -7,3 +7,6 @@
 [submodule "users"]
 	path = users
 	url = git://github.com/SmartReceipt/salt_users.git
+[submodule "groups"]
+	path = groups
+	url = git://github.com/SmartReceipt/salt_groups.git
