@@ -1,12 +1,12 @@
 [submodule "vim"]
 	path = vim
-	url = git://github.com/SmartReceipt/salt_vim.git
+	url = git@github.com:SmartReceipt/salt_vim.git
 [submodule "nginx"]
 	path = nginx
-	url = git://github.com/SmartReceipt/salt_nginx.git
+	url = git@github.com:SmartReceipt/salt_nginx.git
 [submodule "users"]
 	path = users
-	url = git://github.com/SmartReceipt/salt_users.git
+	url = git@github.com:SmartReceipt/salt_users.git
 [submodule "groups"]
 	path = groups
-	url = git://github.com/SmartReceipt/salt_groups.git
+	url = git@github.com:SmartReceipt/salt_groups.git
