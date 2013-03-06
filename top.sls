@@ -1,5 +1,5 @@
 base:
-  'staging*':
+  '*staging*':
     - nginx
     - groups
     - users
