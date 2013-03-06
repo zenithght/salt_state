@@ -3,3 +3,4 @@ base:
     - nginx
     - groups
     - users
+    - vim
