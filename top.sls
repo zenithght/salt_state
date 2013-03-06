@@ -1,6 +1,7 @@
 base:
-  '*staging*':
-    - nginx
+  '*':
     - groups
     - users
     - vim
+  'staging0[13]':
+    - nginx
