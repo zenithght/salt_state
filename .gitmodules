@@ -10,3 +10,6 @@
 [submodule "groups"]
 	path = groups
 	url = git@github.com:SmartReceipt/salt_groups.git
+[submodule "hosts"]
+	path = hosts
+	url = git@github.com:SmartReceipt/salt_hosts.git
