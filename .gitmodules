@@ -19,3 +19,6 @@
 [submodule "logstash"]
 	path = logstash
 	url = git@github.com:SmartReceipt/salt_logstash.git
+[submodule "chef"]
+	path = chef
+	url = git@github.com:SmartReceipt/salt_chef.git
