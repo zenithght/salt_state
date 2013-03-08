@@ -28,3 +28,6 @@
 [submodule "logstash/webinterface"]
 	path = logstash/webinterface
 	url = git@github.com:SmartReceipt/salt_logstash_webinterface.git
+[submodule "iptables"]
+	path = iptables
+	url = git@github.com:SmartReceipt/salt_iptables.git
