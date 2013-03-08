@@ -1,5 +1,5 @@
 base:
-  '*':
+  'staging0[1345]':
     - groups
     - users
     - vim
