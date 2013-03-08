@@ -6,3 +6,5 @@ base:
     - hosts
   'staging0[13]':
     - nginx
+  'staging02':
+    - logstash
