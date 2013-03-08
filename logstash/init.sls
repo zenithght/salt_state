@@ -5,4 +5,4 @@
 
 base:
   '*':
-    - shipper
+    - logstash/shipper
