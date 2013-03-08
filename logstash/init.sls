@@ -3,5 +3,6 @@
 #
 # But not today.
 
-'*':
-  - shipper
+base:
+  '*':
+    - shipper
