@@ -4,6 +4,7 @@ base:
     - users
     - vim
     - hosts
+    - iptables
   'staging0[13]':
     - nginx
   'staging02':
