@@ -16,3 +16,6 @@
 [submodule "iptables"]
 	path = iptables
 	url = git@github.com:SmartReceipt/salt_iptables.git
+[submodule "logstash"]
+	path = logstash
+	url = git@github.com:SmartReceipt/salt_logstash.git
