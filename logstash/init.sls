@@ -3,4 +3,5 @@
 #
 # But not today.
 
-- shipper
+'*':
+  - shipper
