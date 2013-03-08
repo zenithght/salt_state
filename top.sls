@@ -7,4 +7,4 @@ base:
   'staging0[13]':
     - nginx
   'staging02':
-    - logstash
+    - logstash.shipper
