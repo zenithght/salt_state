@@ -13,21 +13,6 @@
 [submodule "hosts"]
 	path = hosts
 	url = git@github.com:SmartReceipt/salt_hosts.git
-[submodule "logstash/shipper"]
-	path = logstash/shipper
-	url = git@github.com:SmartReceipt/salt_logstash_shipper.git
-[submodule "logstash/broker"]
-	path = logstash/broker
-	url = git@github.com:SmartReceipt/salt_logstash_broker.git
-[submodule "logstash/elasticsearch"]
-	path = logstash/elasticsearch
-	url = git@github.com:SmartReceipt/salt_logstash_elasticsearch.git
-[submodule "logstash/indexer"]
-	path = logstash/indexer
-	url = git@github.com:SmartReceipt/salt_logstash_indexer.git
-[submodule "logstash/webinterface"]
-	path = logstash/webinterface
-	url = git@github.com:SmartReceipt/salt_logstash_webinterface.git
 [submodule "iptables"]
 	path = iptables
 	url = git@github.com:SmartReceipt/salt_iptables.git
