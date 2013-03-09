@@ -10,8 +10,8 @@ base:
     - nginx
   'staging02':
     - logstash.client
-{#  'lsshipper*':#}
-{#    - logstash.shipper#}
+  'lsshipper*':
+    - logstash.shipper
 {#  'lsbroker*':#}
 {#    - logstash.broker#}
 {#  'lsindexer*':#}
