@@ -8,4 +8,18 @@ base:
   'staging0[13]':
     - nginx
   'staging02':
-    - logstash.shipper
+    - logstash.client
+  'ls*':
+    - groups
+    - users
+    - vim
+{#  'lsshipper*':#}
+{#    - logstash.shipper#}
+{#  'lsbroker*':#}
+{#    - logstash.broker#}
+{#  'lsindexer*':#}
+{#    - logstash.indexer#}
+{#  'lselasticsearch*':#}
+{#    - logstash.elasticsearch#}
+{#  'lsweb*':#}
+{#    - logstash.webinterface#}
