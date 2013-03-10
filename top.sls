@@ -10,13 +10,14 @@ base:
     - nginx
   'staging02':
     - logstash.client
+
   'lsshipper*':
     - logstash.shipper
   'lsbroker*':
     - logstash.broker
-{#  'lsindexer*':#}
-{#    - logstash.indexer#}
-{#  'lselasticsearch*':#}
-{#    - logstash.elasticsearch#}
-{#  'lsweb*':#}
-{#    - logstash.webinterface#}
+  'lsindexer*':
+    - logstash.indexer
+  'lselasticsearch*':
+    - logstash.elasticsearch
+  'lsweb*':
+    - logstash.webinterface
