@@ -12,8 +12,8 @@ base:
     - logstash.client
   'lsshipper*':
     - logstash.shipper
-{#  'lsbroker*':#}
-{#    - logstash.broker#}
+  'lsbroker*':
+    - logstash.broker
 {#  'lsindexer*':#}
 {#    - logstash.indexer#}
 {#  'lselasticsearch*':#}
