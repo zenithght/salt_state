@@ -22,3 +22,6 @@
 [submodule "chef"]
 	path = chef
 	url = git@github.com:SmartReceipt/salt_chef.git
+[submodule "receipt"]
+	path = receipt
+	url = git@github.com:SmartReceipt/salt_receipt
