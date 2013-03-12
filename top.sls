@@ -19,5 +19,5 @@ base:
     - logstash.indexer
   'lselasticsearch*':
     - logstash.elasticsearch
-  'lsweb*':
+  'ls-web*':
     - logstash.webinterface
