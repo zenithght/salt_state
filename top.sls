@@ -13,7 +13,7 @@ base:
 
   'lsshipper*':
     - logstash.shipper
-  'lsbroker*':
+  'ls-broker*':
     - logstash.broker
   'lsindexer*':
     - logstash.indexer
