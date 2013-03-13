@@ -11,6 +11,9 @@ base:
   'staging02':
     - logstash.client
 
+  'ls*':
+    - hosts
+
   'lsshipper*':
     - logstash.shipper
   'ls-broker*':
