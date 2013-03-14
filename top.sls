@@ -3,18 +3,17 @@ base:
     - groups
     - users
     - vim
+    - logstash.client
   'staging*':
     - hosts
     - iptables
   'staging0[13]':
     - nginx
-  'staging02':
-    - logstash.client
 
   'ls*':
     - hosts
 
-  'lsshipper*':
+  'ls-shipper*':
     - logstash.shipper
   'ls-broker*':
     - logstash.broker
