@@ -3,21 +3,23 @@ base:
     - groups
     - users
     - vim
+    - logstash.client
   'staging*':
     - hosts
     - iptables
   'staging0[13]':
     - nginx
-  'staging02':
-    - logstash.client
 
-  'lsshipper*':
+  'ls*':
+    - hosts
+
+  'ls-shipper*':
     - logstash.shipper
-  'lsbroker*':
+  'ls-broker*':
     - logstash.broker
-  'lsindexer*':
+  'ls-indexer*':
     - logstash.indexer
-  'lselasticsearch*':
+  'ls-elasticsearch*':
     - logstash.elasticsearch
   'ls-web*':
     - logstash.webinterface
