@@ -17,9 +17,9 @@ base:
     - logstash.shipper
   'ls-broker*':
     - logstash.broker
-  'lsindexer*':
+  'ls-indexer*':
     - logstash.indexer
-  'lselasticsearch*':
+  'ls-elasticsearch*':
     - logstash.elasticsearch
   'ls-web*':
     - logstash.webinterface
