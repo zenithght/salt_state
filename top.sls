@@ -1,5 +1,6 @@
 base:
   '*':
+    - collectd
     - groups
     - users
     - vim
