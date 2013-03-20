@@ -28,3 +28,6 @@
 [submodule "zookeeper"]
 	path = zookeeper
 	url = git@github.com:SmartReceipt/salt_zookeeper.git
+[submodule "collectd"]
+	path = collectd
+	url = git@github.com:ahammond/salt_collectd.git
