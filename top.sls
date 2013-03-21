@@ -11,6 +11,9 @@ base:
   'staging0[13]':
     - nginx
 
+  'heartbeat*':
+    - redis
+
   'ls*':
     - hosts
 
