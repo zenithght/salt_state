@@ -31,3 +31,6 @@
 [submodule "collectd"]
 	path = collectd
 	url = git@github.com:SmartReceipt/salt_collectd.git
+[submodule "redis"]
+	path = redis
+	url = git@github.com:SmartReceipt/salt_redis.git
