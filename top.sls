@@ -11,7 +11,7 @@ base:
   'staging0[13]':
     - nginx
 
-  'heartbeat*':
+  '*heartbeat*':
     - redis
 
   'ls*':
