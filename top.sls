@@ -10,13 +10,14 @@ base:
     - iptables
   'staging0[13]':
     - nginx
-
+  'db-*':
+    - postgresql.users
+  'data*':
+    - postgresql.users
   '*heartbeat*':
     - redis
-
   'ls*':
     - hosts
-
   'ls-shipper*':
     - logstash.shipper
   'ls-broker*':
