@@ -34,3 +34,6 @@
 [submodule "redis"]
 	path = redis
 	url = git@github.com:SmartReceipt/salt_redis.git
+[submodule "postgresql"]
+	path = postgresql
+	url = git@github.com:SmartReceipt/salt_postgresql.git
