@@ -37,3 +37,6 @@
 [submodule "postgresql"]
 	path = postgresql
 	url = git@github.com:SmartReceipt/salt_postgresql.git
+[submodule "python"]
+	path = python
+	url = git@github.com:SmartReceipt/salt_python.git
