@@ -16,12 +16,14 @@ base:
     - postgresql.users
   '*heartbeat*':
     - redis
+    - redis.live
   'ls*':
     - hosts
   'ls-shipper*':
     - logstash.shipper
   'ls-broker*':
     - logstash.broker
+    - redis.live
   'ls-indexer*':
     - logstash.indexer
   'ls-elasticsearch*':
