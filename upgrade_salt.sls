@@ -4,3 +4,6 @@ salt-packages:
       - salt-minion
       - libzmq3
     - refresh: True
+
+libzmq1:
+  pkg.purged
