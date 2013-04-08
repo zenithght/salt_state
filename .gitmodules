@@ -40,3 +40,6 @@
 [submodule "python"]
 	path = python
 	url = git@github.com:SmartReceipt/salt_python.git
+[submodule "znc"]
+	path = znc
+	url = git@github.com:SmartReceipt/salt_znc.git
