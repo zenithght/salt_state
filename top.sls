@@ -30,3 +30,5 @@ base:
     - logstash.elasticsearch
   'ls-web*':
     - logstash.webinterface
+  'zookeeper*':
+    - zookeeper
