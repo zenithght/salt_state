@@ -43,3 +43,6 @@
 [submodule "znc"]
 	path = znc
 	url = git@github.com:SmartReceipt/salt_znc.git
+[submodule "storm"]
+	path = storm
+	url = git@github.com:SmartReceipt/salt_storm.git
