@@ -46,3 +46,6 @@
 [submodule "storm"]
 	path = storm
 	url = git@github.com:SmartReceipt/salt_storm.git
+[submodule "prune_cloudfiles"]
+	path = prune_cloudfiles
+	url = https://github.com/SmartReceipt/salt_prune_cloudfiles.git
