@@ -5,6 +5,8 @@ base:
     - users
     - vim
     - logstash.client
+  'chat':
+    - znc
   'staging*':
     - hosts
     - iptables
