@@ -1,9 +1,6 @@
 base:
   '*':
     - collectd
-    - groups
-    - users
-    - vim
     - logstash.client
   'chat':
     - znc
